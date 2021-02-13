@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  db:
+    image: amd64/postgres
+    environment:
+      POSTGRES_PASSWORD: example
+    volumes:
+    - ./app:/app
